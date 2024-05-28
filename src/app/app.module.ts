@@ -12,6 +12,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
