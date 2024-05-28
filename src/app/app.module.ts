@@ -13,6 +13,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ServicesComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [
-    provideAnimationsAsync()
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatIconModule,
+    MatGridListModule,
   ],
+  providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

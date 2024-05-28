@@ -1,11 +1,17 @@
-<div>
-  <header>
-    <app-header></app-header>
-  </header>
-  <body>
-    <app-body></app-body>
-  </body>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</div>
+<mat-grid-list cols="4" rowHeight="fit">
+  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
+    <header>
+      <app-header></app-header>
+    </header>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
+    <body>
+      <app-body></app-body>
+    </body>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </mat-grid-tile>
+</mat-grid-list>
