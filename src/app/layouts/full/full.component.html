@@ -1,17 +1,19 @@
-<mat-grid-list cols="4" rowHeight="fit">
-  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
-    <header>
-      <app-header></app-header>
-    </header>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
-    <body>
-      <app-body></app-body>
-    </body>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="4" rowspan="dynamicRowspan">
-    <footer>
-      <app-footer></app-footer>
-    </footer>
-  </mat-grid-tile>
-</mat-grid-list>
+<div>
+  <mat-grid-list cols="40" rowHeight=".75:1">
+    <mat-grid-tile colspan="40" rowspan="1">
+      <header>
+        <app-header></app-header>
+      </header>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="40" rowspan="80">
+      <body>
+        <app-body></app-body>
+      </body>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="40" rowspan="1">
+      <footer>
+        <app-footer></app-footer>
+      </footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
