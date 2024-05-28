@@ -1,0 +1,26 @@
+nav {
+  width: 100vw;
+  height: 56px;
+
+  top: 0;
+
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: aquamarine;
+  color: green;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
